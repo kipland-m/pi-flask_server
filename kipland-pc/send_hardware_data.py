@@ -17,8 +17,7 @@ while True:
         }
 
         response = requests.post(f'http://{kip_pi_ip}:5000/receive_hardware_data', json=hardware_data)
-        for item in response:
-            print(response.text)
+        print(response.text)
             
         time.sleep(5)
 
