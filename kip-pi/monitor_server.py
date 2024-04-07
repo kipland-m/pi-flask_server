@@ -9,7 +9,9 @@ def receive_hardware_data():
     data = request.json
 
     # Process the received data 
-    print("Received hardware data:", data)
+    for item in data:
+        print(item)
+        
     return 'Data received successfully'
 
 if __name__ == '__main__':
